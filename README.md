@@ -1,13 +1,19 @@
-# Bertuah Admin
+# Universe Admin
 
-Awesome Admin Pannel Create Using Tailwind.
+Silent is Golden!.
+
+## Special Thank
+The special thank for Jiang Yu on Figma
+
+https://www.figma.com/community/file/1065510379888107603/SAAS-Dashboard
+
 
 ## Installation
 
 Clone this repo to your local by running:
 
 ```bash
-git clone https://github.com/pku-dev/bertuah-admin
+git clone https://github.com/irosadie/universe-admin
 ```
 Install package:
 
