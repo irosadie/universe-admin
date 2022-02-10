@@ -7,86 +7,128 @@
     <title>UNIVERSE ADMIN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
     <link href="../assets/css/tailwind.css" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="bg-[#FAFAFB] h-screen w-full font-nunito">
+<body class="bg-[#FAFAFB] h-screen w-full font-nunito text-color-default" >
     <div class="flex">
-        <div class="w-[218px] bg-red-500 min-h-screen">
-            <ul class="mt-32">
-                <li class="bg-pink-300 w-full flex h-12">
-                        <div class="w-14 pr-1 bg-gradient-to-r from-[#ACA9FF] to-transparent grid justify-end content-center rounded-tr-md rounded-br-md -md">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+        <div class="w-[218px] bg-transparent min-h-screen">
+            <ul class="mt-32 space-y-0 text-base">
+                <li class="w-full relative flex max-h-max min-h-12 bg-transparent">
+                    <div class="min-w-14 pr-1 grid justify-end content-center rounded-tr-md rounded-br-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#9a9aa9">
+                                    <path d="M64.5,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM64.5,107.5h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,78.83333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="#" class="px-2 grid justify-end content-center py-2">Dashboard </a>
+                </li>
+                <li class="w-full relative flex max-h-max min-h-12 bg-transparent">
+                    <div class="min-w-14 pr-1 grid justify-end content-center rounded-tr-md rounded-br-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#9a9aa9">
+                                    <path d="M64.5,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM64.5,107.5h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,78.83333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="flex justify-between">
+                        <a href="#" class="px-2 grid justify-end content-center py-2">Welcome </a>
+                        <span class="px-2 grid justify-end content-center py-2">
+                            <span class="rounded-full py-px px-2 bg-sky-500 text-xs text-white">new</span>
+                        </span>
+                    </span>
+                </li>
+                <li class="block">
+                    <div class="w-full relative flex max-h-max min-h-12 bg-transparent after:pr-2 after:content-['v'] after:right-0 after:absolute">
+                        <div class="min-w-14 pr-1 bg-gradient-to-r from-[#ACA9FF] to-transparent grid justify-end content-center rounded-tr-md rounded-br-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;">
                                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <path d="M0,172v-172h172v172z" fill="none"></path>
-                                    <g fill="#9a9aa9">
+                                    <g fill="#605BFF">
                                         <path d="M64.5,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,14.33333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM64.5,107.5h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v21.5c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-21.5c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM143.33333,78.83333h-35.83333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v50.16667c0,7.90483 6.4285,14.33333 14.33333,14.33333h35.83333c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-50.16667c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333z"></path>
                                     </g>
                                 </g>
                             </svg>
                         </div>
-                        <p class="px-2 bg-white grid justify-end content-center">Dashboard</p>
-                </li>
-                <li>
-                    <div>Alert</div>
-                </li>
-                <li>
-                    <div>Badge</div>
-                </li>
-                <li>
-                    <div>Breadcrumb</div>
-                </li>
-                <li>
-                    <div>Button</div>
-                </li>
-                <li>
-                    <div>Card</div>
-                </li>
-                <li>
-                    <div>Carousel</div>
-                </li>
-                <li>
-                    <div>Collapse</div>
-                </li>
-                <li>
-                    <div>Dropdown</div>
-                </li>
-                <li>
-                    <div>Form</div>
-                </li>
-                <li>
-                    <div>List Group</div>
-                </li>
-                <li>
-                    <div>Media Object</div>
-                </li>
-                <li>
-                    <div>Modal</div>
-                </li>
-                <li>
-                    <div>Nav</div>
-                </li>
-                <li>
-                    <div>Navbar</div>
-                </li>
-                <li>
-                    <div>Pagination</div>
-                </li>
-                <li>
-                    <div>Popover</div>
-                </li>
-                <li>
-                    <div>Progress</div>
-                </li>
-                <li>
-                    <div>Table</div>
-                </li>
-                <li>
-                    <div>Tooltip</div>
-                </li>
-                <li>
-                    <div>Typegraphy</div>
+                        <span class="px-2 grid justify-end content-center text-primary-500 py-2">Component </span>
+                    </div>
+                    <ul class="bg-transparent pl-16 text-sm space-y-2 pt-1">
+                        <li>
+                            <span class="flex justify-between">
+                                <a href="">Badge</a>
+                                <span class="pr-2">
+                                      <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="flex justify-between">
+                                <a href="">Button</a>
+                                <span class="pr-2">
+                                      <span class="relative inline-flex rounded-full py-px px-2 w-fit bg-sky-500 text-xs text-white">new</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">Breadcrumb</a>
+                        </li>
+                        <li>
+                            <a href="#">Card</a>
+                        </li>
+                        <li>
+                            <a href="#">Carousel</a>
+                        </li>
+                        <li>
+                            <a href="#">Collapse</a>
+                        </li>
+                        <li>
+                            <a href="#">Dropdown</a>
+                        </li>
+                        <li>
+                            <a href="#">Form</a>
+                        </li>
+                        <li>
+                            <a href="#">List Group</a>
+                        </li>
+                        <li>
+                            <a href="#">Media Object</a>
+                        </li>
+                        <li>
+                            <a href="#">Modal</a>
+                        </li>
+                         <li>
+                            <a href="#">Nav</a>
+                        </li>
+                         <li>
+                            <a href="#">Navbar</a>
+                        </li>
+                        <li>
+                            <a href="#">Pagination</a>
+                        </li>
+                        <li>
+                            <a href="#">Popover</a>
+                        </li>
+                        <li>
+                            <a href="#">Progress</a>
+                        </li>
+                        <li>
+                            <a href="#">Table</a>
+                        </li>
+                        <li>
+                            <a href="#">Tooltip</a>
+                        </li>
+                        <li>
+                            <a href="#">Typography</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -94,7 +136,7 @@
             <div class="w-full h-16 bg-yellow-300">
                 <div class="px-3 w-full h-16 grid content-center">
                     <div class="flex justify-between mx-3">
-                        <div>Dashboard</div>
+                        <div class="text-xl font-bold">Dashboard</div>
                         <div>LOGO</div>
                     </div>
                 </div>

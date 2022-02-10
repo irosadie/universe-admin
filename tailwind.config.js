@@ -1,6 +1,12 @@
 module.exports = {
   content: ["./pages/**/*.{html,js}"],
   theme: {
+    minHeight: {
+      '12': '48px'
+    },
+    minWidth: {
+      '14': '56px',
+    },
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
@@ -11,13 +17,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        'color-default': '#030229',
         primary: {
           '50':  '#f9fafb',
           '100': '#f0f1f3',
           '200': '#d9dbdf',
           '300': '#b7bbc2',
           '400': '#8f959f',
-          '500': '#6e7582',
+          '500': '#605BFF',
           '600': '#555e6e',
           '700': '#3e4859',
           '800': '#283242',
